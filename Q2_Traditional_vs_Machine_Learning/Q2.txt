@@ -1,0 +1,118 @@
+Q2: Traditional Programming vs Machine Learning
+
+---
+
+# Question
+
+Differentiate between Traditional Programming and Machine Learning using a clear diagram description and a concrete example. Then explain the three components every ML algorithm must have according to the course framework.
+
+---
+
+# Concept
+
+This question focuses on understanding the fundamental difference between Traditional Programming and Machine Learning, and the essential components required in any ML system.
+
+---
+
+# Intuition (Simple Understanding)
+
+Traditional Programming:
+We give rules + data → get output  
+
+Machine Learning:
+We give data + output → machine learns rules  
+
+---
+
+# Solution
+
+##  Traditional Programming
+
+**Flow:**
+
+Input Data + Program (rules) → Output  
+
+- Rules are explicitly written by the programmer  
+- System does not learn from data  
+
+---
+
+##  Machine Learning
+
+**Flow:**
+
+Input Data + Output → Machine learns Model (rules)  
+
+Then:
+
+New Data + Model → Predicted Output  
+
+- System learns patterns from data  
+- No need to explicitly program rules  
+
+---
+
+##  Key Differences
+
+| Traditional Programming | Machine Learning |
+|------------------------|-----------------|
+| Rules are manually coded | Rules are learned from data |
+| Static system | Improves with experience |
+| Works well for defined logic | Works well for complex patterns |
+
+---
+
+##  Example
+
+### Traditional Programming:
+A program to calculate salary:
+- Input: working hours  
+- Rule: salary = hours × rate  
+- Output: salary  
+
+---
+
+### Machine Learning:
+Spam email detection:
+- Input: email data  
+- Output: spam / not spam  
+- Model learns rules automatically from past data  
+
+---
+
+##  Three Components of ML Algorithm
+
+### 1. Representation
+
+- The model used to represent data  
+- Example: Linear Regression, Decision Tree  
+
+---
+
+### 2. Evaluation
+
+- How good the model is  
+- Example: Accuracy, MSE, R²  
+
+---
+
+### 3. Optimization
+
+- How to improve the model  
+- Example: Gradient Descent  
+
+---
+
+# Final Answer
+
+Traditional programming uses explicit rules to process data and generate output, whereas machine learning learns patterns from data to generate predictions.  
+
+An ML system requires three components: representation (model), evaluation (performance measure), and optimization (learning process).
+
+---
+
+# Key Takeaways
+
+- ML = learning rules from data  
+- Traditional programming = writing rules manually  
+- ML needs: Representation + Evaluation + Optimization  
