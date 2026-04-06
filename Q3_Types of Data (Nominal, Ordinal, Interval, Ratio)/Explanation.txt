@@ -1,0 +1,92 @@
+---Topic: Types of Data (Nominal, Ordinal, Interval, Ratio)
+
+Question-
+
+Q3. The following table lists various real-world attributes. 
+Classify each attribute as Nominal, Ordinal, Interval, or Ratio. 
+For each, state which mathematical operations (+, −, ×, ÷, <, =) are meaningful and justify: 
+
+Attribute        Example Values              Scale Type     Operations Allowed 
+Blood Type       A, B, AB, O                   Nominal         = ≠ 
+Pain Level       Mild < Moderate < Severe      Ordinal         = ≠ < > 
+Temperature(°C)   0, 25, 100                   Interval        = ≠ < > + − 
+Weight (kg)       0, 5.5, 70                   Ratio           = ≠ < > + − × ÷ 
+
+a) Is it physically meaningful to say 40°C is twice as hot as 20°C? Compare this on the Celsius and Kelvin scales.
+b) Explain the key difference between an Interval and a Ratio attribute using the concept of an absolute zero.
+
+--------------------------------------------------------------------------------------------------------------------------
+
+# Concept
+
+This question is based on types of data (measurement scales) in Machine Learning:
+
+- Nominal  
+- Ordinal  
+- Interval  
+- Ratio  
+
+---
+
+# Intuition (Simple Understanding)
+
+Data can be categorized based on:
+
+- Order  
+- Difference  
+- Presence of true zero  
+
+---
+
+# Solution
+
+## Classification Table
+
+| Attribute | Scale Type  | Operations Allowed | Justification |
+|-----------|-------------|--------------------|---------------|
+| Blood Type| Nominal     | =, ≠               | Only labels, no order |
+| Pain Level | Ordinal | =, ≠, <, > | Order exists but no meaningful difference |
+| Temperature (°C) | Interval | =, ≠, <, >, +, − | No true zero, only differences matter |
+| Weight (kg) | Ratio | =, ≠, <, >, +, −, ×, ÷ | True zero exists |
+
+---
+
+## (a) Temperature Comparison
+
+It is NOT meaningful to say 40°C is twice as hot as 20°C.
+
+This is because Celsius is an interval scale and does not have a true zero.
+
+Even in Kelvin:
+20°C = 293K  
+40°C = 313K  
+
+Since 313 is not twice of 293, the statement is incorrect.
+
+---
+
+## (b) Interval vs Ratio
+
+The key difference is the presence of absolute zero.
+
+- Interval scale: No true zero (e.g., Celsius)  
+- Ratio scale: Has true zero (e.g., weight)  
+
+Because of this:
+
+- Ratios (×, ÷) are meaningful only in ratio scale  
+- Not meaningful in interval scale  
+
+---
+
+# Final Answer
+
+Nominal and ordinal scales do not support arithmetic operations, while interval supports addition and subtraction but not ratios. Ratio scale supports all operations due to the presence of true zero.
+
+---
+
+# Key Takeaways
+
+- Data types define what operations are valid  
+- Interval ≠ Ratio  
+- True zero is the key difference
