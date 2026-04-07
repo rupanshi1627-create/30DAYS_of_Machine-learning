@@ -1,0 +1,79 @@
+b) A linear regression model on a salary prediction problem has 50 features. 
+Many features are correlated and some are irrelevant. Which regularization method would you prefer — Ridge, Lasso, or Elastic Net? 
+Justify your choice.
+
+Part (b): Choosing the Right Regularization Method
+
+## Problem Statement
+
+We are given:
+- A dataset with 50 features
+- Many features are correlated
+- Some features are irrelevant
+
+The task is to choose the most suitable regularization technique among Ridge, Lasso, and Elastic Net.
+
+---
+
+##  Understanding the Situation
+
+1. **Correlated Features**
+   - Multiple features carry similar information
+   - Example: years of experience and age
+
+2. **Irrelevant Features**
+   - Some features do not contribute to prediction
+   - These should ideally be removed
+
+---
+
+## Analysis of Methods
+
+### 1. Ridge Regression (L2)
+
+- Handles correlated features well  
+- Distributes weights among them  
+- Does NOT eliminate irrelevant features  
+
+Limitation:
+- Keeps all features, even useless ones  
+
+---
+
+### 2. Lasso Regression (L1)
+
+- Performs feature selection  
+- Can reduce some weights to exactly zero  
+
+ Limitation:
+- Unstable when features are highly correlated  
+- May randomly select one feature and ignore others  
+
+---
+
+### 3. Elastic Net (L1 + L2)
+
+- Combines Ridge and Lasso  
+- Handles correlation (like Ridge)  
+- Performs feature selection (like Lasso)  
+
+---
+
+## Final Answer
+
+**Elastic Net is the best choice.**
+
+---
+
+## Justification
+
+Elastic Net is preferred because:
+- It effectively handles correlated features using L2 regularization
+- It removes irrelevant features using L1 regularization
+- It provides a balanced and stable solution
+
+---
+
+## Conclusion
+
+In datasets with both correlated and irrelevant features, Elastic Net is the most suitable regularization technique as it combines the strengths of both Ridge and Lasso.

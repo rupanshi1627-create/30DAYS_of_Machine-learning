@@ -1,0 +1,72 @@
+c)  Apply ONE iteration of Ridge Regression Gradient Descent to the BMI-Risk data from Q8 using regularization constant λ = 0.5, η = 0.01, and initial weights w₀ = 2.0, w₁ = 0.1. 
+Show the updated weight equations and compute the new w₁.
+# Part (c): One Iteration of Ridge Gradient Descent
+
+## Given
+
+- Regularization constant (λ) = 0.5  
+- Learning rate (η) = 0.01  
+- Initial weight w₁ = 0.1  
+- Number of data points n = 5  
+
+From previous computation (Q8):
+Σ(ŷᵢ − yᵢ)·xᵢ = -102  
+
+---------------------------------------------------------
+
+## Ridge Gradient Descent Update Rule
+
+wⱼ' = wⱼ(1 − ηλ) − (η/n) Σ(ŷᵢ − yᵢ)·xᵢⱼ
+
+For w₁:
+
+w₁' = w₁(1 − ηλ) − (η/n) Σ(ŷᵢ − yᵢ)x
+
+---------------------------------------------------------
+
+## Step-by-Step Calculation
+
+### Step 1: Compute (1 − ηλ)
+
+1 − (0.01 × 0.5) = 1 − 0.005 = 0.995
+
+--------------------------------------------------------
+
+### Step 2: Multiply with w₁
+
+0.1 × 0.995 = 0.0995
+
+--------------------------------------------------------- 
+
+### Step 3: Compute gradient term
+
+(η / n) × Σ(error × x)
+
+= (0.01 / 5) × (-102)  
+= 0.002 × (-102)  
+= -0.204  
+
+---------------------------------------------------------
+
+### Step 4: Final Update
+
+w₁' = 0.0995 − (−0.204)  
+w₁' = 0.0995 + 0.204  
+
+w₁' = 0.3035  
+
+---------------------------------------------------------
+
+##  Final Answer
+
+New value of w₁ after one iteration:
+
+w₁ ≈ 0.3035
+
+---------------------------------------------------------
+
+## 🔷 Interpretation
+
+- The first term shrinks the weight due to regularization  
+- The second term updates the weight based on gradient  
+- Ridge Regression combines both shrinkage and learning

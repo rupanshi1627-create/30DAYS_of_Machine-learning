@@ -1,0 +1,115 @@
+QUESTION--
+Q9.  Regularization is a key technique to prevent overfitting in linear regression.
+a)  Write the Ridge (L2) and Lasso (L1) regularized cost functions. How do they differ in terms of the penalty term?
+b)  A linear regression model on a salary prediction problem has 50 features. Many features are correlated and some are irrelevant. Which regularization method would you prefer — Ridge, Lasso, or Elastic Net? Justify your choice.
+c)  Apply ONE iteration of Ridge Regression Gradient Descent to the BMI-Risk data from Q8 using regularization constant λ = 0.5, η = 0.01, and initial weights w₀ = 2.0, w₁ = 0.1. Show the updated weight equations and compute the new w₁.
+
+----OVERVIEW
+
+Regularization is a powerful technique in machine learning used to prevent overfitting and improve a model’s ability to generalize to unseen data. When models become too complex, they tend to memorize the training data rather than learning meaningful patterns. Regularization solves this problem by adding a penalty term to the loss function, encouraging simpler models.
+
+---Objective
+-Understand the concept of overfitting and generalization
+-Learn how regularization controls model complexity
+-Explore L1, L2, and Elastic Net in depth
+-Build strong intuition with mathematical formulations
+-Implement regularization using Python
+
+---Core Concept
+
+Standard Loss Function:
+
+[Loss = Error]
+
+Regularized Loss Function:
+
+[Loss = Error + Penalty]
+
+The penalty term restricts large weights, making the model simpler and more robust.
+
+---Types of Regularization
+
+1. L2 Regularization (Ridge)
+
+Formula:
+Loss = Σ(y − ŷ)² + λ Σ(w²)
+
+Key Features:
+
+-Penalizes squared weights
+-Reduces magnitude of all weights
+-Does not eliminate features
+-Produces smooth and stable models
+
+Use Case:
+
+When all features are important
+When multicollinearity exists
+
+2. L1 Regularization (Lasso)
+
+Formula:
+Loss = Σ(y − ŷ)² + λ Σ(|w|)
+
+Key Features:
+
+-Penalizes absolute weights
+-Drives some weights to zero
+-Performs automatic feature selection
+-Produces sparse models
+
+Use Case:
+
+High-dimensional datasets
+Feature selection problems
+
+3. Elastic Net
+
+Formula:
+
+Loss = Σ(y − ŷ)² + λ₁ Σ(|w|) + λ₂ Σ(w²)
+
+Key Features:
+
+Combines L1 and L2
+Balances sparsity and stability
+Handles correlated features better
+
+Use Case:
+
+When Lasso is unstable
+When features are highly correlated
+
+Role of Lambda (λ)
+
+The hyperparameter λ controls the strength of regularization:
+
+λ = 0 → No regularization (risk of overfitting)
+Small λ → Mild regularization
+Large λ → Strong regularization (risk of underfitting)
+
+
+---Intuition (Graph Perspective)
+
+-Without regularization → Complex, zig-zag curve (overfitting)
+-With regularization → Smooth curve (generalization)
+
+--Geometry Insight:
+
+-Ridge → Circular constraint → Smooth shrinkage
+-Lasso → Diamond constraint → Sharp corners → Zero weights
+
+-----------------------------------------------------------------------------------
+
+---Key Takeaways:
+
+-Regularization prevents overfitting
+-Adds penalty to control complexity
+-L1 → Feature selection
+-L2 → Weight shrinking
+-Elastic Net → Best of both
+-λ controls the strength of regularization
+
+---Conclusion:
+Regularization is essential for building robust machine learning models. By controlling model complexity and preventing overfitting,
+it ensures better performance on unseen data, making it a critical concept for both academic understanding and real-world applications.
