@@ -1,0 +1,13 @@
+Part (b): Partial Derivatives
+
+To minimize the cost function, we compute derivatives with respect to weights.
+
+∂J/∂w₀ = (1/n) Σ (ŷ - y)
+
+∂J/∂w₁ = (1/n) Σ (ŷ - y)x
+
+Explanation:
+- These derivatives represent the gradient (slope) of the cost function
+- They indicate the direction in which weights should be updated
+- If gradient is positive → decrease weight
+- If gradient is negative → increase weight

@@ -1,0 +1,14 @@
+(a) Cost Function (MSE Form)
+
+The cost function for linear regression is defined using Mean Squared Error (MSE):
+
+J(w₀, w₁) = (1 / 2n) Σ (y - (w₀ + w₁x))²
+
+Where:
+- y = actual value
+- ŷ = predicted value = w₀ + w₁x
+- n = number of data points
+
+Purpose:
+The cost function measures the difference between actual and predicted values.
+The objective is to minimize this cost.

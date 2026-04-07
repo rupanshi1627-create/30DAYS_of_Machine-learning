@@ -1,0 +1,22 @@
+Part (d): Types of Gradient Descent
+
+1. Batch Gradient Descent
+- Uses the entire dataset for each update
+- Convergence: Smooth and stable
+- Cost: High (slow for large data)
+
+2. Stochastic Gradient Descent (SGD)
+- Uses one data point at a time
+- Convergence: Noisy and fluctuating
+- Cost: Low (fast updates)
+
+3. Mini-Batch Gradient Descent
+- Uses small batches of data
+- Convergence: Balanced (less noisy than SGD)
+- Cost: Medium
+
+Comparison:
+
+Batch → stable but slow  
+SGD → fast but unstable  
+Mini-batch → best balance (most used in practice)
