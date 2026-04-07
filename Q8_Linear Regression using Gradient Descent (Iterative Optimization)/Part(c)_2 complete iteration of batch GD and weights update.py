@@ -36,8 +36,6 @@ for i in range(2):#why 2?--bcz it is in question that 2 iterations
     
     #print iteration for what is happening after each oteration
     print(f"Iteration {i+1}: w0={w0}, w1={w1}")
-    # Plot cost vs iteration
-    
 
 
 
