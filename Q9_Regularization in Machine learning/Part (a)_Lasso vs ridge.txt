@@ -1,0 +1,8 @@
+Ridge (L2):
+J = (1/2n) Σ(y - ŷ)² + λ Σ w²
+
+Lasso (L1):
+J = (1/2n) Σ(y - ŷ)² + λ Σ |w|
+
+Difference:
+Ridge shrinks weights, Lasso sets some weights to zero.
