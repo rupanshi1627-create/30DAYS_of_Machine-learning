@@ -1,0 +1,32 @@
+----Feature Scaling in Gradient Descent
+
+----Feature scaling is the process of bringing all input features to a similar range.
+
+In machine learning, Gradient Descent is used to minimize the cost function. However, when features have very different scales, it causes problems.
+
+Example:
+Age ranges from 18 to 60
+Salary ranges from 20,000 to 1,000,000
+
+In such cases, the feature with larger values (Salary) dominates the learning process.
+
+This creates an elongated (oval-shaped) cost function, causing Gradient Descent to take a zig-zag path. As a result:
+- Convergence becomes slow
+- Updates become unstable
+- The algorithm may not reach the optimal solution
+
+After scaling:
+- All features are brought to a similar range
+- The cost function becomes more circular
+- Gradient Descent follows a straight path
+- Convergence becomes faster and stable
+
+Common methods:
+1. Min-Max Scaling:
+x' = (x - min) / (max - min)
+
+2. Standardization:
+x' = (x - mean) / standard deviation
+
+----Conclusion:
+Feature scaling is essential for efficient and stable optimization in Gradient Descent.
